@@ -1,10 +1,10 @@
-# HR_ANALYTICS_DASHBOARD
+##HR_ANALYTICS_DASHBOARD
 #Overview of HR Analytics Dashboard
 The HR Analytics Dashboard in Power BI provides an in-depth analysis of workforce trends, helping HR teams make data-driven decisions. It includes key performance indicators (KPIs) such as total employees, attrition percentage, promotion rate, average performance scores, and salary distribution.
 The dashboard features visualizations like stacked bar charts to analyze attrition by department, line charts to compare salary vs. performance, and funnel charts to assess salary distribution across job roles. Additionally, a donut chart highlights regional salary trends, while a treemap tracks leave patterns across departments.
 By analyzing these metrics, HR teams can identify turnover trends, evaluate pay equity, and optimize workforce planning. The dashboard enables businesses to enhance employee satisfaction, improve retention strategies, and ensure fair compensation. With interactive filters and slicers, users can dynamically explore insights based on different regions and employee attributes, making this an essential tool for HR decision-making
 
-#Step 1: Load Data
+Step 1: Load Data
 Source: Excel file (already cleaned).
 Action: Load data into Power BI.
 Initial Setup:
@@ -18,7 +18,7 @@ Sorting the Department column in ascending order for better organization.
 Schema Type: Flat Schema (only one table used).
 Structure: The table contains both quantitative (numeric) and descriptive (categorical) data.
 Reason for Flat Schema: Since all required data is in a single table, no relationships are needed.
-#Step 4: Creating DAX Measures for KPI Cards
+Step 4: Creating DAX Measures for KPI Cards
 KPI Name	DAX Formula
 Total Employees	Total_Employe = COUNT(Sheet1[Employee_ID])
 Attrition Percentage	Total_Attrition_Percentage = DIVIDE(COUNTROWS(FILTER(Sheet1,Sheet1[Attrition]="Yes")), COUNTROWS(Sheet1))
@@ -28,7 +28,7 @@ Average Work Hours per Week	Avg_Work_Hours_per_Week = AVERAGE(Sheet1[Work Hours/
 Total Male Employees	Total_Male = COUNTROWS(FILTER(Sheet1,Sheet1[Gender]="Male"))
 Total Female Employees	Total_Female = COUNTROWS(FILTER(Sheet1,Sheet1[Gender]="Female"))
 Average Training Hours	Avg_Training_Hour = AVERAGE(Sheet1[Training Hours])
-#Step 5: Adding Visuals & Their Analysis
+Step 5: Adding Visuals & Their Analysis
 1️ Stacked Bar Chart
 X-Axis: Employee ID
 Y-Axis: Department

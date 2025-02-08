@@ -1,4 +1,4 @@
-## HR_ANALYTICS_DASHBOARD
+# HR_ANALYTICS_DASHBOARD
 #Overview of HR Analytics Dashboard
 The HR Analytics Dashboard in Power BI provides an in-depth analysis of workforce trends, helping HR teams make data-driven decisions. It includes key performance indicators (KPIs) such as total employees, attrition percentage, promotion rate, average performance scores, and salary distribution.
 The dashboard features visualizations like stacked bar charts to analyze attrition by department, line charts to compare salary vs. performance, and funnel charts to assess salary distribution across job roles. Additionally, a donut chart highlights regional salary trends, while a treemap tracks leave patterns across departments.
